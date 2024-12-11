@@ -45,7 +45,14 @@ body, html{
     flex-direction: column;
     padding: 30px;
     gap: 30px;
+    cursor: pointer;
 }
+
+.main-card:hover{
+    background-color: hsl(236, 41%, 34%);
+}
+
+
 
 .bg-card{
     width: 100%;
@@ -124,7 +131,7 @@ body, html{
 }
 
 .header button{
-    background-color: #1d204b;
+    background-color: transparent;
     color: white;
     border-style: none;
     cursor: pointer;
