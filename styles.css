@@ -54,6 +54,8 @@ body, html{
     border-radius: 15px;
     z-index: 9;
     position: absolute;
+    background-repeat: no-repeat;
+    background-position: 80% 0;
 }
 
 .profil{
@@ -68,6 +70,34 @@ body, html{
     z-index: 10;
     position: relative;
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    color: white;
+}
+
+.profil-card h1{
+    margin: 0;
+    font-size: 2.3rem;
+    font-weight: 300;
+}
+
+.profil-card p{
+    margin: 0;
+    margin-top: 50px;
+}
+
+.placeholder{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.placeholder img{
+    height: 100%;
+    width: auto;
+
 }
 
 .profil-bg{
@@ -77,6 +107,10 @@ body, html{
     height: 100%;
     border-radius: 15px;
     background-color: #1d204b;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 30px;
 }
 
 .header{
@@ -109,3 +143,103 @@ body, html{
     margin-top: -20px;
 }
 
+.sort{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.sort div{
+    cursor: pointer;
+}
+
+.work .bg-card{
+    background-color: hsl(15, 100%, 70%);
+    background-image: url(./images/icon-work.svg);
+}
+
+.play .bg-card{
+    background-color: hsl(195, 74%, 62%);
+    background-image: url(./images/icon-play.svg);
+}
+
+.study .bg-card{
+    background-color: hsl(348, 99%, 68%);
+    background-image: url(./images/icon-study.svg);
+}
+
+.exercise .bg-card{
+    background-color: hsl(145, 58%, 55%);
+    background-image: url(./images/icon-exercise.svg);
+}
+
+.social .bg-card{
+    background-color: hsl(263, 63%, 51%);
+    background-image: url(./images/icon-social.svg);
+}
+
+.selfcare .bg-card{
+    background-color: hsl(43, 84%, 65%);
+    background-image: url(./images/icon-self-care.svg);
+}
+
+.inactive{
+    color: hsl(237, 33%, 56%);
+}
+
+@media(max-width: 600px) {
+    *{
+        box-sizing: border-box;
+    }
+
+   .main-wrapper{
+    width: 100vw;
+    height: 220vh;
+    padding: 2vh;
+   }
+
+   .grid{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+   }
+
+   .child{
+    height: 30vh;
+    width: 100%;
+   }
+
+   .profil{
+    height: 25vh;
+   }
+
+   .sort{
+    flex-direction: row;
+    justify-content: space-between;
+   }
+
+   .profil-card{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw;
+   }
+
+   .profil-bg{
+    padding-bottom: 2.5vh ;
+   }
+
+   .author h1{
+    font-size: 1.2rem;
+   }
+
+   .author p{
+    margin: 0;
+   }
+
+
+}
+  
